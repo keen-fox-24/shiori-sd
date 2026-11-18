@@ -15,7 +15,8 @@
 1. [済] 学習用データセット seed 7枚 + キャプションを作成（dataset/）
 2. [次] データセットを 15〜20枚まで増やす（表情・角度・服装・場所をばらけさせる）
 3. [君の作業・1回だけ] Kaggleアカウント登録 + 電話番号認証（GPUとインターネットが有効化される）
-4. Kaggleにデータセットをアップロードし、ノートブック（kaggle/train_shiori_lora_kaggle.ipynb）を実行
+4. ノートブック（kaggle/train_shiori_lora_kaggle.ipynb）を Kaggle で実行
+   - データセットの受け渡しは GitHub 経由に決定（2026-11-18、ユーザー選択）: 公開リポジトリ https://github.com/keen-fox-24/shiori-sd に shiori-dataset.zip を置き、ノートブックが自動で clone + 展開する。理由: Kaggle Web UI のファイル選択が自動ブラウザで開けず、UIアップロードができなかったため。
    - ベースモデル候補: Animagine XL 4.0（SDXL系・アニメ向け）
    - 学習: kohya sd-scripts、T4 16GB向け設定（1024px、batch 1、8bit optimizer、fp16）
 5. できたLoRAでテスト生成（外出・カフェ・部屋など）→ 顔の一致具合を確認して調整
